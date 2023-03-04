@@ -1,4 +1,5 @@
 RewriteCond %{SERVER_PORT} 443      
-RewriteCond %{HTTPS_HOST} ^oncovar\.org$ [OR]
-RewriteCond %{HTTPS_HOST} ^www\.oncovar\.org$ 
-RewriteRule ^(.*)$ http://oncovar.org/$1 [R,L]
+RewriteCond %{HTTPS_HOST} ^bioinformatics\.club$ [OR]
+RewriteCond %{HTTPS_HOST} ^www\.bioinformatics\.club$ 
+RewriteRule ^(.*)$ http://bioinformatics.club/$1 [R,L]
+Header always unset X-Frame-Options
